@@ -1,0 +1,205 @@
+/* Resetear algunos estilos por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f3f4f6; /* Fondo suave */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items:center;
+    justify-content:left;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+#logo1{
+    justify-content:left;
+    color: #005866;
+}
+#logo2{
+    justify-content:right;
+    color: #005866;
+    position:relative;
+    left: 800px;
+}
+
+.logo-header {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+    justify-content:left;
+}
+
+.login-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura de la ventana */
+    padding-top: 120px; /* Espacio para el encabezado */
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #005866;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #005866;
+}
+
+
+
+
+.login-content {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los campos de entrada */
+.divUs, .divPass {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #555;
+}
+
+.div h5 {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input:focus {
+    border-color: #005866;
+    box-shadow: #45c7db;
+}
+
+/* Estilo para el botón */
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #005866;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #317883;
+}
+
+/* Estilo para la vista de contraseña */
+.view {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #555;
+}
+
+.text-center a {
+    font-size: 0.9rem;
+    color: #005866;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.text-center a:hover {
+    color: #005866;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+/* Para dispositivos móviles */
+@media (max-width: 768px) {
+    .login-content {
+        padding: 20px;
+        width: 90%;
+    }
+}
+.logo {
+    display: block;
+    margin: 0 auto;  /* Para centrar la imagen */
+    width: 100px;  /* Ajusta el tamaño según sea necesario */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    padding-bottom: 20px; /* Espacio debajo de la imagen */
+}

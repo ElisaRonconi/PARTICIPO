@@ -1,0 +1,168 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Distribuye el logo, el título y el subtítulo */
+    align-items: center; /* Alinea verticalmente */
+    padding: 1px 20px;
+    background-color: #f3f4f6;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    position: relative;
+    z-index: 100;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #005866;
+    min-height: 100vh; /* Centra verticalmente */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    z-index: 50%;
+}
+.logo1 {
+    color: #005866;
+    margin-left: 10px;
+    font-size: 15px; /* Tamaño del título principal */
+    font-weight: bold;
+    text-align:left;
+    
+}
+
+.logo2 {
+    color: #005866;
+    font-size: 18px;
+    text-align: right;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+.logo-header {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+}
+
+/* Menú */
+nav {
+    margin-top: 30px; /* Baja el menú un poco más */
+    display: flex;
+    justify-content: center; /* Centra el menú */
+    background-color: #005866;
+    padding: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    line-height: 50px;
+    font-size: 15px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #f3f4f6;
+    padding: 0 20px;
+}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #005866;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:#4b5c5f;
+}
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:#005866;
+}
+h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:#4b5c5f;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.elegir {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Centra verticalmente */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    
+}
+
+label {
+    margin-top: 20px; /* Reduce el margen superior */
+    color: #005866; /* Cambia el color a un tono más coherente con la página */
+    font-weight: bold;
+    text-align: left;
+    width: 50%; /* Para que esté alineado con los selectores */
+}
+
+select {
+    width: 50%; /* Asegura que los selectores ocupen el mismo espacio que los labels */
+    padding: 20px;
+    
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #e2e2e2;
+    text-align: center;
+    border-radius: 5px;
+    box-sizing: border-box; /* Evita que el padding afecte el tamaño total */
+    display: flex;
+    
+}
+button {margin-top: 20px;
+    width: 50%; /* El botón tendrá el mismo ancho que los selectores */
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #005866;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+button:hover {
+    background-color: #004a57; /* Un pequeño cambio de color en hover */
+}

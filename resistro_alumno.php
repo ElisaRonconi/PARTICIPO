@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta</title>
+    <link rel="stylesheet" href="styles/alta.css">
+    <link rel="shortcut icon" href="IMG/logo.png" />
+</head>
+<body>
+<header>
+    <img src="IMG/logo.png" alt="Logo" class="logo-header">
+    <div id="logo1"><h1>PARTICIPO</h1></div>
+    <div id="logo2"><h2>Sistema de Asistencias</h2></div>
+</header>
+
+<nav class="navMenu">
+    <a href="inicio.php">Inicio</a>
+    <a href="alta_alumno.php">Altas</a>
+    <a href="consultar_asistencia.php">Asistencias</a>
+    <a href="resistro_alumno.php">Registros</a>
+    <a href="#">Calendario</a>
+    <div class="animation start-home"></div>
+</nav>
+
+    
+<div class="login-content"> 
+        <h2>Datos de Alumno</h2>
+        <form action="alta_alumno.php" method="POST">
+<div class="formulario">
+
+  <label for="nombre">Nombre:</label>
+  <input type="nombre" id="nombre" name="nombre" required><br>
+
+  <label for="apellido">Apellido:</label>
+  <input type="apellido" id="apellido" name="apellido" required><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br>
+
+  <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+  <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br>
+
+  <label for="dni">DNI:</label>
+  <input type="dni" id="dni" name="dni" required><br>
+
+
+  <input type="submit" value="Registrar datos">
+</form>
+</div>
+    </div>
+</body>
+</html>
