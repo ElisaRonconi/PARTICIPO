@@ -1,0 +1,412 @@
+/* Estilo general */
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #ebf6f77a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Ajusta si es necesario */
+
+}
+
+/* Fondo con imagen */
+.welcome-section {
+    background-image: url('IMG/asisto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-top: 10px;
+  }
+  
+  .welcome-text h2 {
+    font-size: 30px;
+  }
+  
+  button {
+    background-color: #005866;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #066f80;
+  }
+  
+
+/* Encabezado y navegación */
+header {
+    position: relative;
+    z-index: 10;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+    border-radius: 3px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.logo {
+    font-size: 34px;
+    font-weight: bold;
+    color:#005866;
+ 
+    
+}
+
+.logo-header {
+    width: 70px;
+    height: auto;
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+ 
+nav {
+    background-color: transparent; /* Transparente para destacar sobre la imagen */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  margin-top: 1px;
+  
+}
+
+.navMenu {
+    list-style: none;
+    display: flex;
+    margin: 10px;
+    padding: 0;
+    margin-top: 15px;
+    
+}
+
+.navMenu li {
+    position: relative;
+    margin-right: 20px;
+    
+}
+
+
+
+.navMenu a {
+    text-decoration: none;
+    color: #005866;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 2px;
+    text-align:left;
+    justify-content: flex-start;
+}
+
+.navMenu .active a {
+
+    color: #005866;
+    text-align: right;
+}
+
+.navMenu a:hover {
+    background-color: #0058667a; /* Color al pasar el mouse */
+    transition: color 0.3s; /* Transición suave al cambiar de color */
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1px;
+    border-color: rgba(256, 256, 256, .1) !important;
+  }
+
+
+ 
+  
+  .copyright {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #f1f1f1;
+    text-align: left;
+    font-size: 12px;
+    color: #333;
+    border-top: 1px solid #ccc;
+  }
+
+/* Menú desplegable */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #e8eaeb;
+    box-shadow: 0 2px 10px #014b57;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+    border-radius: 2px;
+}
+
+.dropdown-menu li a {
+    padding: 10px 15px;
+    color: #000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Sección de bienvenida */
+.welcome-text {
+    position: relative;
+    background-image: url('IMG/estudiantes.jpg'); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover; /* Para que la imagen cubra todo el div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en el div */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    white-space: normal;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Cambia según lo necesites */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Para mejor visibilidad */
+}
+
+.welcome-text h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.welcome-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #005866;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #066f80;
+}
+
+.logout-icon {
+    display: inline-block;
+    margin-left: auto; /* Mueve el ícono a la derecha */
+    padding: 5px;
+    transition: transform 0.2s;
+}
+
+.logout-icon:hover {
+    transform: scale(1.1); /* Hace que el ícono crezca un poco al pasar el mouse */
+}
+
+/*ASISTENCIAS*/
+
+.container.asistencia {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px; /* Margen interno */
+    padding-top: 100px; /* Ajusta el espacio superior según lo necesites */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    /* Agregar un espacio alrededor para que el borde no toque los márgenes */
+    margin: 30px;
+}
+
+.input-field {
+    flex: 1;
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.input-field:first-child {
+    margin-left: 0;
+}
+
+.input-field:last-child {
+    margin-right: 0;
+}
+
+.submit-btn {
+    background-color: #066f80;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #1c97aa;
+}
+
+/*ALTA INSTITUTO*/
+.bg-white {
+    background-color: #fff !important;
+  }
+  .text-uppercase {
+    text-transform: uppercase !important;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  /*ASISTENCIA CONTAINER*/
+
+  
+
+  .container.asistencia {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección para organizar en columna */
+    align-items: center;
+    gap: 10px; /* Espacio entre los elementos */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Fondo blanco */
+    max-width: 900px;
+    width: 100%;
+}
+
+
+.container.asistencia select,
+.container.asistencia input[type="date"],
+.container.asistencia button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+    font-size: 1rem;
+}
+
+.container.asistencia select:focus,
+.container.asistencia input[type="date"]:focus {
+    border-color: #007bff;
+}
+
+.container.asistencia button {
+    background-color: #006666; /* Verde azulado */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+.container.asistencia button:hover {
+    background-color: #004d4d;
+}
+
+/*Editar ALUMNO*/
+
+
+.container-gorup {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: #00796b;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="date"]:focus {
+    border-color: #00796b;
+    outline: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: #00796b;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004d40;
+}
